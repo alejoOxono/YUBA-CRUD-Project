@@ -14,7 +14,7 @@ module.exports = (sequelize) => {
             allowNull: false,
         },
 
-        nombre: {
+        departamento: {
             type: DataTypes.STRING,
             allowNull: false,
         },
@@ -22,5 +22,6 @@ module.exports = (sequelize) => {
     }, {
         freezeTableName: true,
         updatedAt: false,
+        createdAt: false,
     });
 };

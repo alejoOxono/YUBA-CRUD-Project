@@ -5,15 +5,19 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon -L",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -w ./tests/**/*.spec.js"
   },
   "author": "Alejandro Cardona",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.3.6",
     "cors": "^2.8.5",
     "express": "^4.18.1",
+    "mocha": "^10.0.0",
     "nodemon": "^2.0.16",
     "pg": "^8.7.3",
-    "sequelize": "^6.20.0"
+    "sequelize": "^6.20.0",
+    "supertest": "^6.2.3",
+    "supertest-session": "^4.1.0"
   }
 }

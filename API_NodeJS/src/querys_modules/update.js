@@ -2,14 +2,16 @@ const { connect } = require("../db");
 const { Departamento } = connect.models;
 
 const update = async (data) => {
-
-    await User.update({ id: data.id }, {
+    
+    await Departamento.update({ 
+        codigo: data.codigo,
+        departamento: data.departamento
+    }, {
         where: {
-            codigo: data.codigo,
-            departamento: data.departamento
+            id: data.id 
         }
     });
-    return
+    return;
 
 }
 

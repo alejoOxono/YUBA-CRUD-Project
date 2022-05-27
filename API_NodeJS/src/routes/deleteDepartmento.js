@@ -6,9 +6,9 @@ const router = Router();
 router.use(express.json());
 
 
-router.get('/api/delete/:codigo', async (req, res) => {
+router.get('/api/delete', async (req, res) => {
     try {
-        let { id } = req.params;
+        let { id } = req.query;
         await deleteFunction(id);
         res.json({ response: `El elemento ha sido eliminado` });
     }

@@ -8,7 +8,7 @@ const deleteFunction = async (id) => {
             id: id
         }
     });
-    return
+    return;
 
 }
 
