@@ -1,22 +1,23 @@
 import React from "react"
+import './forminsert.css';
 
 function FormInsert({handleSubmit, handleForm}) {
     return (
         <React.Fragment>
-            <form onChange={(e) => handleForm(e)}>
+            <form className="form-insert" onChange={(e) => handleForm(e)}>
 
-                <div className="codigo">
+                <div className="div-input">
                     <label htmlFor="codigo" >Código</label>
-                    <input placeholder='código...' type="number" min="0" name="codigo" id="insert-codigo" className="input-insert-codigo" />
+                    <input placeholder='código...' type="number" min="0" name="codigo" id="insert-codigo" className="input-insert" />
                 </div>
 
 
-                <div className="div-departamento">
+                <div className="div-input">
                     <label htmlFor="departamento">Departamento</label>
-                    <input placeholder='departamento...' type="text" name="departamento" id="insert-departamento" className="input-insert-departamento" />
+                    <input placeholder='departamento...' type="text" name="departamento" id="insert-departamento" className="input-insert" />
                 </div>
 
-                <div className="div-submit">
+                <div className="div-input">
                     <button type='submit' onClick={(e) => handleSubmit(e)}>Aceptar</button>
                 </div>
             </form>

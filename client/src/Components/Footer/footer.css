@@ -1,0 +1,18 @@
+.content-footer {
+    height: 100%;
+    width: 100%;
+    background-color: #283039;
+}
+
+p {
+    color: white;
+}
+
+.link {
+    all: unset;
+    color: #bdd13d;
+}
+.link:hover{
+    cursor: pointer;
+    color: white;
+}

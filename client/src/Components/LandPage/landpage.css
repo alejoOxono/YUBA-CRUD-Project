@@ -1,0 +1,19 @@
+.all-container {
+    height: 100vh;
+}
+
+.header-containe {
+    height: 20vh;    
+}
+
+.insert-container {
+    height: 20vh;   
+}
+
+.read-container {
+    min-height: 50vh;   
+}
+
+.footer-coontainer {
+    height: 15vh;  
+}

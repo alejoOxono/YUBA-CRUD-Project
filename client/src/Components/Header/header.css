@@ -1,0 +1,18 @@
+.title-yuba1, .title-yuba2 {
+    font-weight: bolder;
+    font-size:xx-large;
+    color: #bdd13d;
+    position: relative;
+    top: 35px;
+    left: 50px;
+    padding: 0;
+}
+
+.title-yuba1 {
+    color: #283039;
+}
+
+.subtitle-name {
+    background-color: #283039;
+    text-align: center;
+}

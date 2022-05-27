@@ -1,0 +1,13 @@
+.table-container {
+    width:50%;
+    margin:auto;
+}
+
+.button-column {
+    display: flex;
+    justify-content: center;
+}
+
+.button-to-modify {
+    padding:8px;
+}

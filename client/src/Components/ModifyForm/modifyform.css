@@ -1,0 +1,18 @@
+.form-modify-container {
+    width:50%;
+    margin:auto;
+}
+
+.button-goBack {
+    margin-left:50px;
+}
+
+.div-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.input-modify {
+    width: 60%;
+}

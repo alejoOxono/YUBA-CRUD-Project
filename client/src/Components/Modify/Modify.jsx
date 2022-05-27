@@ -5,6 +5,7 @@ import updateRecord from '../../Modules/updateRecord';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import ModifyForm from '../ModifyForm/ModifyForm';
+import './modify.css';
 
 function Modify() {
     const data = useLocation().state;
@@ -38,11 +39,21 @@ function Modify() {
     }
 
     return (
-        <React.Fragment>
+        <div className='modify-container'>
+            
+            <div className="header-container">
             <Header />
+            </div>
+            
+            <div className="modify-form-container">
             <ModifyForm handleUpdate={handleUpdate} handleForm={handleForm} handleDelete={handleDelete} data={data}/>
+            </div>
+
+            <div className="footer-coontainer">
             <Footer />
-        </React.Fragment>    )
+            </div>
+        </div>    
+    )
 }
 
 export default Modify

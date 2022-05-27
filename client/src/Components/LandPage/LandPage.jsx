@@ -1,18 +1,31 @@
-import React from "react"
 import Footer from "../Footer/Footer"
 import Header from "../Header/Header"
 import Insert from "../Insert/Insert"
 import Read from "../Read/Read"
+import './landpage.css';
 
 
 function LandPage() {
   return (
-        <React.Fragment>
+        <div className="all-container">
+
+            <div className="header-container">
             <Header />
+            </div>
+
+            <div className="insert-container">
             <Insert />
+            </div>
+
+            <div className="read-container">
             <Read />
+            </div>
+
+            <div className="footer-coontainer">
             <Footer />
-        </React.Fragment>
+            </div>
+
+        </div>
     )
 }
 

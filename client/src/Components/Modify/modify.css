@@ -1,0 +1,15 @@
+.modify-container {
+    min-height: 100vh;
+}
+
+.header-container {
+    height: 20vh;    
+}
+
+.modify-form-container {
+    height: 70vh;   
+}
+
+.footer-coontainer {
+    height: 10vh;   
+}

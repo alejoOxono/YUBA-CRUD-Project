@@ -10,8 +10,12 @@ function Insert() {
     const handleSubmit = (e) => {
         e.preventDefault();
         insertRecord(record);
-        alert('Se ha Ingresado un producto');
-        window.location.reload();
+        if(!record?.codigo || !record?.departamento){
+            alert('Por favor ingrese todos los datos');
+        } else {
+            alert('Se ha Ingresado un producto');
+            window.location.reload();
+        }
     }
 
     const handleForm = (e) => {
